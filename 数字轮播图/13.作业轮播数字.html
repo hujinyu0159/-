@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        #tab { overflow:hidden; 
+               width:50px;
+               height:80px;
+               position:relative;
+               float:left;
+             } 
+        </style>
+</head>
+<body>
+        <div id="tab"> 
+            
+                <img src="11/1.jpg" width="50px" height="80px"/>
+                <img src="11/2.jpg" width="50px" height="80px"/>
+                <img src="11/3.jpg" width="50px" height="80px"/>
+                <img src="11/4.jpg" width="50px" height="80px"/>
+                <img src="11/5.jpg" width="50px" height="80px"/>
+                <img src="11/6.jpg" width="50px" height="80px"/>
+                <img src="11/7.jpg" width="50px" height="80px"/>
+                <img src="11/8.jpg" width="50px" height="80px"/>
+                <img src="11/9.jpg" width="50px" height="80px"/>
+            </div>
+ <Script>
+    window.onload= function(){
+    var images = document.getElementsByTagName('img');
+     var i = 0;
+     var len = images.length;
+     setInterval(function(){
+         images[i].style.display = 'none';
+         i = ++i == len ? 0 : i;
+         images[i].style.display = 'inline';
+      
+     },1000);
+     }; 
+     
+</Script>   
+</body>
+</html>
